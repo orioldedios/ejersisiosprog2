@@ -26,7 +26,7 @@ int main() {
 			{ "Ori", "defense", -98 },
 			{ "Moo", "forward", -99 },
 			{ "Apu", "midfield", 492837 },
-			{ "tioooo", "goalkeeper", 1 }
+			{ "Creatiñvidad", "goalkeeper", 1 }
 		}
 	};
 	printTeam(c);
