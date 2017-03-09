@@ -25,7 +25,9 @@ void absSwap(int* arr1, int* arr) {
 			arr1[i] = arr[i] * (-1);
 
 		}
-		arr1[i] = arr[i];
+		else {
+			arr1[i] = arr[i];
+		}
 	}
 }
 
@@ -55,7 +57,6 @@ int main() {
 	arr[17] = 178;
 	arr[18] = -1;
 	arr[19] = 17;
-	arr[20] = 71;
 
 
 	absSwap(arr1, arr);
