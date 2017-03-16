@@ -3,15 +3,15 @@
 using namespace std;
 
 ////EXERCICE 1
-//void doubleNum(unsigned short* number){
-//	*number *= 2;
+//void doubleNum(unsigned short& n){
+//	n *= 2;
 //}
 //
 //int main() {
 //	unsigned short number;
 //	cout << "Give me a number between 1 and 100: ";
 //	cin >> number;
-//	doubleNum(&number);
+//	doubleNum(number);
 //	cout << number << "\n";
 //	system("pause");
 //	return 0;
@@ -40,18 +40,19 @@ void printweaponinfo(const weapon& w) {
 	cout << "\n-- Weapon --\nname = " << w.name << "\ndamage units = " << w.damage << "\n";
 }
 
-void attack(pirate p, weapon w) {
-	p.lifeunits -= w.damage;
+void attack(pirate* p, weapon w) {
+	p->lifeunits -= w.damage;
 }
 
 int main() {
 	pirate p;
-	p.name = { "leChuck" };
+	p.name = "leChuck" ;
 	p.lifeunits = 100;
 	weapon w;
-	w.name = { "sword" };
+
+	w.name =  "sword" ;
 	w.damage = 10;
-	attack(p, w);
+	attack(&p, w);
 	printpirateinfo(p);
 	system("pause");
 	return 0;
