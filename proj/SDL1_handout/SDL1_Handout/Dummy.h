@@ -4,6 +4,21 @@
 #include "Module.h"
 #include "Globals.h"
 
+class ModuleWindow : public Module
+{
+	bool Init()
+	{
+		LOG("Window Init!");
+		return true;
+	}
+
+	bool CleanUp()
+	{
+		LOG("Windowrfhnfhnmtmjytm,dtr,i7rul,oke7ydtkujterkw8r4tyeoelkdj5e5g3u475mo6mkj4iu5e5t3swcdqfrtg6j25oi3rwu4ey CleanUp!");
+		return true;
+	}
+};
+
 class ModuleDummy : public Module
 {
 	bool Init()
