@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\oriolddm\desktop\ejersisiosprog2\templates\templates\main.cpp(18): warning C4305: 'argument': truncation from 'double' to 'float'
+  templates.vcxproj -> C:\Users\oriolddm\Desktop\ejersisiosprog2\templates\Debug\templates.exe
+  templates.vcxproj -> C:\Users\oriolddm\Desktop\ejersisiosprog2\templates\Debug\templates.pdb (Partial PDB)
